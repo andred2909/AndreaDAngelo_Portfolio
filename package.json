@@ -1,9 +1,9 @@
 {
-  "name": "portfoliotechdev",
+  "name": "andreadangelo_portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": ".",
+  "homepage": "https://andred2909.github.io/AndreaDAngelo_Portfolio/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
