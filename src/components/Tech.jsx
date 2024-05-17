@@ -33,6 +33,13 @@ const Tech = () => {
         <p className={styles.sectionSubText}>What I'm capable to work with</p>
         <h2 className={styles.sectionHeadText}>Skills</h2>
       </motion.div>
+      {isAndroid() ? <motion.p 
+        variants={fadeIn("", "", 0.1 ,1)}
+        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
+      >
+        Here's a preview of the technologies I've worked with. <br/>
+        You can find more of them, visiting this portfolio on desktop or iOS.
+      </motion.p> : null}
 
       <div className='flex flex-row flex-wrap justify-center gap-10'>
         {technologies.map((tech) => (
