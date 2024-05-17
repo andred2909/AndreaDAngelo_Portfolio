@@ -24,7 +24,7 @@ import {
     unity,
     unreal,
     vue,
-
+    
     elemhands,
     airport,
     mario_party,
@@ -80,9 +80,21 @@ import {
       icon: unity,
     },
     {
+      name: "Unreal",
+      icon: unreal,
+    },
+    {
       name: "Csharp",
       icon: csharp,
-    }, 
+    },
+    {
+      name: "Cplus",
+      icon: cplus,
+    },    
+    {
+      name: "git",
+      icon: git,
+    },    
     {
       name: "Maya",
       icon: maya,
@@ -110,6 +122,10 @@ import {
     {
       name: "Three JS",
       icon: threejs,
+    },
+    {
+      name: "Vue",
+      icon: vue,
     },
   ];
   
