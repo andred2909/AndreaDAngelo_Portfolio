@@ -6,7 +6,6 @@ import { styles } from "../styles"
 import { textVariant } from "../utils/motion"
 
 const Tech = () => {
-
   const isAndroid = () => {
     var userAgent = navigator.userAgent || navigator.vendor || window.opera;
     if (/android/i.test(userAgent)) {
@@ -15,7 +14,6 @@ const Tech = () => {
       return false;
     }
   }
-
   const isMobile = (mobile) => {
     if (mobile) {
       return true
@@ -23,7 +21,6 @@ const Tech = () => {
       return false
     }
   }
-
   return (
     <>
       <motion.div
@@ -39,8 +36,10 @@ const Tech = () => {
 
       <div className='flex flex-row flex-wrap justify-center gap-10'>
         {technologies.map((tech) => (
-          <div className='w-28 h-28' key={tech.name}>
-            {isAndroid() ? (isMobile(tech.mobile) ? <BallCanvas icon={tech.icon}/> : null) : <BallCanvas icon={tech.icon}/>}
+          isAndroid() ? (isMobile(tech.mobile) ? <div className='w-28 h-28' key={tech.name}>
+          <BallCanvas icon={tech.icon} color={tech.color} />
+          </div> : null) : <div className='w-28 h-28' key={tech.name}>
+            <BallCanvas icon={tech.icon} color={tech.color} />
           </div>
         ))}
       </div>
