@@ -23,7 +23,10 @@ const ProjectCard = ({ index, name, year, description, tags, image, source_code_
 
   return(
     <motion.div
-    variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
+    initial="hidden"
+    whileInView={"show"}
+    >
       <Tilt
       options={{
         max: 45,
@@ -32,7 +35,7 @@ const ProjectCard = ({ index, name, year, description, tags, image, source_code_
       }}
       className="bg-tertiary p-5 rounded-2xl sm:w-[300px] w-full"
       >
-        <div className='relative w-full h-[230px]'>
+        <div className='relative w-full h-[180px]'>
           <img
           src={image}
           alt={name}
@@ -58,14 +61,14 @@ const ProjectCard = ({ index, name, year, description, tags, image, source_code_
         </div>
 
         <div className='mt-5'>
-          <h3 className='text-white font-bold text-[22px]'>{name}</h3>
-          <p className='text-white mt-1 text-[16px]'>{year}</p>
+          <h3 className='text-white font-bold text-[20px]'>{name}</h3>
+          <p className='text-white mt-2 text-[16px]'>{year}</p>
           <p className='text-secondary mt-2 text-[14px]'>{description}</p>
         </div>
 
         <div className='mt-4 flex flex-wrap gap-2'>
           {tags.map((tag) => (
-            <p key={tag.name} className={`text-[14px] ${tag.color}`}>
+            <p key={tag.name} className={`text-[12px] ${tag.color}`}>
               #{tag.name}
             </p>
           ))}
@@ -79,7 +82,9 @@ const Works = () => {
   return (
     <>
       <motion.div
-      variants={textVariant()}>
+      variants={textVariant()}
+      initial="hidden"
+      whileInView={"show"}>
         <p className={styles.sectionSubText}>My work</p>
         <h2 className={styles.sectionHeadText}>Projects</h2>
       </motion.div>
@@ -87,6 +92,8 @@ const Works = () => {
       <div className="w-full flex">
         <motion.p
         variants={fadeIn("", "", 0.1, 1)}
+        initial="hidden"
+        whileInView={"show"}
         className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]">
           Here are a few of the projects I've worked on throughout my academic and professional career.<br/>
           Each project is briefly described, to better explain the purpose and the technologies used on it.<br/>
