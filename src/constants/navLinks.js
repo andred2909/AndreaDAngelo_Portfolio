@@ -1,9 +1,6 @@
 /* File dove inserire TUTTI i contenuti del sito: tecnologie usate, progetti, nomi, etc.. */
 
-import { color } from "framer-motion";
 import {
-    logo,
-    mobile,
     game_design,
     frontend,
     vr,
@@ -12,43 +9,21 @@ import {
     iis_romero,
     level_up,
     mystery_house,
-    ragtag,
     tp,
     unito,
-    github,
-    menu,
-    close,
     css,
-    figma,
     git,
     html,
     javascript,
-    nodejs,
     reactjs,
-    tailwind,
     threejs,
-    after_effects,
-    android,
     blender,
-    c,
     cplus,
     csharp,
-    java,
-    latex,
-    linux,
     maya,
-    photoshop,
-    php,
-    premiere,
-    python,
-    sql,
     unity,
     unreal,
-    xd,
     vue,
-    carrent,
-    jobit,
-    tripguide,
 
     elemhands,
     airport,
@@ -59,8 +34,6 @@ import {
     sydney_stop,
     tune_it_up,
     death_corner,
-    pdf,
-    youtube,
   } from "../assets";
   
   export const navLinks = [
@@ -107,21 +80,9 @@ import {
       icon: unity,
     },
     {
-      name: "Unreal",
-      icon: unreal,
-    },
-    {
       name: "Csharp",
       icon: csharp,
-    },
-    {
-      name: "Cplus",
-      icon: cplus,
-    },    
-    {
-      name: "git",
-      icon: git,
-    },    
+    }, 
     {
       name: "Maya",
       icon: maya,
@@ -149,10 +110,6 @@ import {
     {
       name: "Three JS",
       icon: threejs,
-    },
-    {
-      name: "Vue",
-      icon: vue,
     },
   ];
   
