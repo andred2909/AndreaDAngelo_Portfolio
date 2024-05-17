@@ -34,6 +34,7 @@ import {
     sydney_stop,
     tune_it_up,
     death_corner,
+    mobile,
   } from "../assets";
   
   export const navLinks = [
@@ -78,54 +79,67 @@ import {
     {
       name: "Unity",
       icon: unity,
+      mobile: true,
     },
     /* {
       name: "Unreal",
       icon: unreal,
+      mobile: false
     }, */
     {
       name: "Csharp",
       icon: csharp,
+      mobile: true,
     },/* 
     {
       name: "Cplus",
       icon: cplus,
+      mobile: false,
     },   */  
     /* {
       name: "git",
       icon: git,
+      mobile: false,
     },    
     {
       name: "Maya",
       icon: maya,
+      mobile: false,
     },
     {
       name: "Blender",
       icon: blender,
+      mobile: false,
     }, */
     {
       name: "HTML 5",
       icon: html,
+      mobile: true,
     },
     {
       name: "CSS 3",
       icon: css,
+      mobile: true,
     },
     {
       name: "JavaScript",
       icon: javascript,
+      mobile: true,
     },
     {
       name: "React JS",
       icon: reactjs,
+      mobile: true,
     },
     {
       name: "Three JS",
       icon: threejs,
+      mobile: true,
     },
     {
       name: "Vue",
       icon: vue,
+      mobile: true,
     },
   ];
   
