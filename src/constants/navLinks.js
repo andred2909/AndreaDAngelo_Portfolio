@@ -81,22 +81,22 @@ import {
       icon: unity,
       mobile: true,
     },
-    /* {
+    {
       name: "Unreal",
       icon: unreal,
       mobile: false
-    }, */
+    },
     {
       name: "Csharp",
       icon: csharp,
       mobile: true,
-    },/* 
+    },
     {
       name: "Cplus",
       icon: cplus,
       mobile: false,
-    },   */  
-    /* {
+    },
+    {
       name: "git",
       icon: git,
       mobile: false,
@@ -110,7 +110,7 @@ import {
       name: "Blender",
       icon: blender,
       mobile: false,
-    }, */
+    },
     {
       name: "HTML 5",
       icon: html,
