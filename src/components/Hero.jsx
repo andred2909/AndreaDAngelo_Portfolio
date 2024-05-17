@@ -3,24 +3,16 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
 
+
 const Hero = () => {
-  function getMobileOperatingSystem() {
+
+  const isAndroid = () => {
     var userAgent = navigator.userAgent || navigator.vendor || window.opera;
-
-    // Windows Phone must come first because its UA also contains "Android"
-    if (/windows phone/i.test(userAgent)) {
-        return "Windows Phone";
-    }
-
     if (/android/i.test(userAgent)) {
-        return "Android";
+        return true;
+    } else {
+      return false;
     }
-
-    // iOS detection from: http://stackoverflow.com/a/9039885/177710
-    if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-        return "iOS";
-    }
-    return "unknown";
   }
   
   return (
@@ -37,11 +29,11 @@ const Hero = () => {
           </span></h1>
 
           <p>I'm an XR Developer and a CS student, 
-          <br className="sm:block hidden"/> with an interest <i><b>{getMobileOperatingSystem()}</b></i> for Game Design and VR systems.
+          <br className="sm:block hidden"/> with an interest for Game Design and VR systems.
           </p>
         </div>
       </div>
-      {/* <ComputersCanvas /> */}
+      {isAndroid() ? null : <ComputersCanvas/>}
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
         <a href="#about">
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">

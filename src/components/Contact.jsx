@@ -8,6 +8,15 @@ import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
 const Contact = () => {
+  const isAndroid = () => {
+    var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+    if (/android/i.test(userAgent)) {
+        return true;
+    } else {
+      return false;
+    }
+  }
+
   const formRef = useRef()
   const [form, setForm] = useState({
     name: "",
@@ -108,12 +117,12 @@ const Contact = () => {
         </form>
       </motion.div>
 
-      {/* <motion.div
+      {isAndroid ? <motion.div
         variants={slideIn('left', "tween", 0.2, 1)}
         className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
       >
         <EarthCanvas />
-      </motion.div> */}
+      </motion.div> : null}
     </div>
   )
 }

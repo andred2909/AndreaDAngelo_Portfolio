@@ -14,6 +14,7 @@ import mystery_house from "./mystery_house.png";
 import ragtag from "./ragtag.jpeg";
 import tp from "./tp_logo.jpeg";
 import unito from "./unito.png";
+import vr_headset from "./vr.png";
 
 import css from "./tech/css.png";
 import figma from "./tech/figma.png";
@@ -118,4 +119,5 @@ export {
   death_corner,
   pdf,
   youtube,
+  vr_headset,
 };
