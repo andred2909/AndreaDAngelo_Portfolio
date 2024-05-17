@@ -79,19 +79,19 @@ import {
       name: "Unity",
       icon: unity,
     },
-    {
+    /* {
       name: "Unreal",
       icon: unreal,
-    },
+    }, */
     {
       name: "Csharp",
       icon: csharp,
-    },
+    },/* 
     {
       name: "Cplus",
       icon: cplus,
-    },    
-    {
+    },   */  
+    /* {
       name: "git",
       icon: git,
     },    
@@ -102,7 +102,7 @@ import {
     {
       name: "Blender",
       icon: blender,
-    },
+    }, */
     {
       name: "HTML 5",
       icon: html,
