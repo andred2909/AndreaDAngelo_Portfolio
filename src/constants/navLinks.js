@@ -51,6 +51,7 @@ import {
       title: "Contact",
     },
     {
+      id: "",
       cv: "https://drive.google.com/file/d/1qt-rdA-30Rbakvhqz97imTjuoMsPrHSs/view?usp=sharing",
       title: "Resume",
     },

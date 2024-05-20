@@ -24,8 +24,8 @@ const ProjectCard = ({ index, name, year, description, tags, image, source_code_
   return(
     <motion.div
     variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
-    initial="hidden"
-    whileInView={"show"}
+    initial="show"
+    /* whileInView={"show"} */
     >
       <Tilt
       options={{
