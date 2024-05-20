@@ -8,11 +8,6 @@ import { logo, menu, close } from '../assets';
 const Navbar = () => {
   const [active, setActive] = useState('');
   const [toggle, setToggle] = useState(false);
-  const checkLink = (id) => {
-    if(id === "" || id === undefined) {
-      return false
-    } else return true;
-  }
 
   return (
     <nav className={`${styles.paddingX}  w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}>
@@ -34,10 +29,7 @@ const Navbar = () => {
               <li
                 key={link.id}
                 className={`${active === link.title ? "text-white" : "text-secondary"} hover:text-white text-[18px] font-medium cursor-pointer`}>
-                {checkLink(link.id) ? <a href={`#${link.id}`}>{link.title}</a> : 
-                <div onClick={() => window.open(link.cv, "_blank")}>
-                  <a>{link.title}</a>  
-                </div>}
+                <a href={`${link.id}`}>{link.title}</a>
               </li>
             ))}
         </ul>
@@ -53,7 +45,7 @@ const Navbar = () => {
                     setToggle(!toggle);
                     setActive(link.title);
                   }}>
-                  <a href={`#${link.id}`}>{link.title}</a>
+                  <a href={`${link.id}`}>{link.title}</a>
                 </li>
               ))}
           </ul>
